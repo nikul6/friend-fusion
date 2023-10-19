@@ -1,0 +1,68 @@
+<div className="bg-white mt-10 rounded-lg shadow-slate-500 shadow-xl" key={itemId}>
+    <div className="px-4">
+        <div className="flex items-center pt-4">
+            <img src={userImg} className="h-10 rounded-full " alt="" />
+            <div className="ms-2">
+                <p className="capitalize font-bold">{item.userName}</p>
+                <p className="text-sm text-slate-500">2 hours ago</p>
+            </div>
+            <div className="ms-auto">
+                <i className="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div className="mt-4">
+            {/* <div>
+        <p>{item.title}</p>
+     </div>    */}
+            <img src={item.imgUrl} className="h-[200px] bg-slate-600 rounded-lg" alt={item.title} />
+            <div className="my-4 flex items-center">
+                <div className="flex items-center">
+                    <div className="h-8 w-8 bg-red-200 rounded-full">
+                        {/* <!-- add like icon --> */}
+                    </div>
+                    <p className="text-sm text-slate-500 ms-2">{item.likes}</p>
+                </div>
+                <div className="flex items-center ms-4">
+                    <div className="h-8 w-8 bg-slate-200 rounded-full">
+                        {/* <!-- add comment icon --> */}
+                    </div>
+                    <p className="text-sm text-slate-500 ms-2">{item.comments}</p>
+                </div>
+                <div className="ms-auto flex items-center">
+                    <div className="h-8 w-8 bg-slate-200 rounded-full">
+                        {/* <!-- add send icon --> */}
+                    </div>
+                    <div className="h-8 w-8 bg-slate-200 rounded-full ms-3">
+                        {/* <!-- add send icon --> */}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div className="border-t-2 border-stone-200 px-4 ">
+        <div className="flex my-4">
+            <img src={userImg} className="h-10 rounded-full " alt="" />
+            <div className="ms-2">
+                <p className="capitalize font-bold">monroe parker</p>
+                <p className="text-sm text-slate-500">2 hours ago</p>
+            </div>
+        </div>
+        <div className="flex my-4">
+            <img src={userImg} className="h-10 rounded-full " alt="" />
+            <div className="ms-2">
+                <p className="capitalize font-bold">monroe parker</p>
+                <p className="text-sm text-slate-500">2 hours ago</p>
+            </div>
+        </div>
+        <div className="capitalize mb-4 font-semibold">
+            <p className="text-slate-500"><i className="fa-solid fa-angle-down me-3  "></i>More comment</p>
+        </div>
+    </div>
+    <div className="p-4 border-t-2 border-stone-200">
+        <div className="capitalize flex items-center" >
+            <img src={userImg} className="h-10 rounded-full " alt="" />
+            <input type="text" className=" text-sm   lg:pe-6 pe-0 py-2" placeholder="Add Comment..." />
+            <button className="bg-slate-300 px-4 py-1 capitalize ms-auto font-semibold rounded-full ">replay</button>
+        </div>
+    </div>
+</div>

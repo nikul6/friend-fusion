@@ -1,0 +1,9 @@
+type Query {
+  """
+  Result typed as JSON since none of its fields is a valid GraphQL identifier ["-Ngwrhs2HTImVr21dvEh", "-Ngws1z6D6VnD_FJ8uBC", "-NgwsEjPgHKWJPEjRZyS", "-NgwsV-obl_J5xZ310Qo"]
+  """
+  myQuery: JSON
+    @rest(
+      endpoint: "https://socialmedia-ececf-default-rtdb.firebaseio.com/posts.json"
+    )
+}
