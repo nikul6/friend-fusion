@@ -2,18 +2,16 @@ import { useDispatch } from "react-redux"
 import { AppDispatch, useAppSelector } from "../redux/store"
 import { useEffect } from "react"
 import { getUsers } from "../redux/user/userSlice";
-import { auth } from "../firebase";
 
 const userImg = "https://demo.foxthemes.net/instello/assets/images/avatars/avatar-2.jpg"
 
 function FollowUser() {
     const users = useAppSelector((state) => state.user.users);
     const dispatch = useDispatch<AppDispatch>();
-    const loginUID = auth.currentUser?.uid
 
     useEffect(() => {
         dispatch(getUsers())
-    }, [])
+    }, [dispatch])
 
     return (
         <div className=" bg-white rounded-lg ms-0 lg:ms-10 p-4 shadow-slate-500 shadow-xl">
